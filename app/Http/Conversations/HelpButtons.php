@@ -24,7 +24,8 @@ class HelpButtons extends Conversation
         $this->ask($question, function ($answer){
         	if ($answer->isInteractiveMessageReply()) {
         		if($answer->getValue() === 'commands'){
-        			$this->say($answer->getValue());
+        			$this->say('You selected to see my commands '.$answer->getValue());
+                    $this->bot->startConversation(new App\Http\Conversations\CommandsConversation); 
         		}
         		else if($answer->getValue() === 'staff'){
         			$this->say('You selected to contact a member of '.$answer->getValue());

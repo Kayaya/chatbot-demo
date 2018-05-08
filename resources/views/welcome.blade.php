@@ -59,14 +59,19 @@
         </div>
 
         <div class="links">
-            <a href="/botman/tinker">Tinker</a>
-            <a href="https://botman.io/docs" target="_blank">Documentation</a>
-            <a href="https://twitter.com/botman_io" target="_blank">News</a>
-            <a href="https://rauchg-slackin-jtdkltstsj.now.sh/" target="_blank">Slack</a>
-            <a href="https://github.com/botman/botman" target="_blank">GitHub</a>
+            <a href="/botman/tinker">Let's chat...</a>
+            <a href="https://github.com/Kayaya/chatbot-demo" target="_blank">See project in GitHub</a>
         </div>
     </div>
-    <script src='https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/js/widget.js'></script>
+    <script>
+        var botmanWidget = {
+            title: 'Sol helpdesk bot',
+            introMessage: 'Hi, I am an helpdesk bot. You can ask me anything about the Southampton Solent University',
+            bubbleBackground: '#c60303',
+            mainColor: '#5dc6cc'    
+        };
+    </script>
+    <script src='https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/js/widget.js'></script> 
 </div>
 
 </body>

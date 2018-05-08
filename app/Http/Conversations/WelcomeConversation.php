@@ -11,16 +11,16 @@ class WelcomeConversation extends Conversation
      *
      * @return mixed
      */
+    protected $isEmpty;
 
     protected function askName(){
-    	$this->ask('What is your name?', function($answer) {
-        	$this->name = $answer->getText();
+    	   $this->ask('What is your name?', function($answer) {
+            $this->name = $answer->getText();
         	$this->say('Nice to meet you, '.$this->name);
             $this->say('How can I help you today?');
-            $counter = 1;
+           
         });
     }
-
 
     public function run()
     {
@@ -29,6 +29,5 @@ class WelcomeConversation extends Conversation
         //call Ask user's name function
         //$this->askName();
     }
-
 
 }

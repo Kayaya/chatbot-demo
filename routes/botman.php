@@ -40,6 +40,7 @@ $botman->hears('Help|help', function ($bot) {
     $bot->reply('You can use the following commands:');
     $bot->reply('help: Display chatbot commands');
     $bot->reply('stop: Stops a conversation');
+    $bot->reply('contact staff: Send a message directly to a member of staff');
 
 })->skipsConversation();
 
@@ -48,23 +49,7 @@ $botman->hears('Stop|stop', function ($bot) {
     $bot->reply('Your conversation has been stopped!');
 })->stopsConversation();
 
-/*
-$botman->hears('Hello', function ($bot) {
-	$bot->types();
-    $bot->reply('Hello!');
-});
 
-$botman->hears('Start conversation', BotManController::class.'@startConversation');
-
-
-
-$botman->fallback(function($bot){
-	$bot->types();
-	$message = $bot->getMessage();
-	$bot->reply('Sorry! I don\'t understand: '.$message);
-});
-*/
-/*
 //Frequently asked Questions
 $botman->hears('What external stakeholders were consulted' , function ($bot) {
     $bot->reply('Key clients/customers and Chamber of Shipping members have been consulted. There has been specific feedback on the need to maintain the quality of the officer cadet experience, the international reputation, standards and outputs, funding for officer cadet provision, and location, which have been taken on board.');
@@ -86,31 +71,6 @@ $botman->hears('tell me about so* solent uni*', function ($bot) {
     $bot->reply('Solent University is a public university based in Southampton, United Kingdom. It has approximately 11000 students. Its main campus is located on East Park Terrace near the city centre and the maritime hub of Southampton.');
 });
 
-$botman->hears('how are you?', function ($bot) {
-    $bot->reply('I am fine');
-});
-
-$botman->hears('', function ($bot) {
-    $bot->reply('');
-});
-
-$botman->hears('', function ($bot) {
-    $bot->reply('');
-});
-
-$botman->hears('', function ($bot) {
-    $bot->reply('');
-});
-
-$botman->hears('', function ($bot) {
-    $bot->reply('');
-});
-
-$botman->hears('', function ($bot) {
-    $bot->reply('');
-});
-
-*/
 
 
 
