@@ -22,3 +22,4 @@ class CommandsConversation extends Conversation
     	$this->say('"contact staff":-- chose this to send a message directly to a member of staff');
     }
 }
+  

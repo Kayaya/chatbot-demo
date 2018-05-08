@@ -3,7 +3,7 @@
 namespace App\Http\Conversations;
 
 use BotMan\BotMan\Messages\Conversations\Conversation;
-
+  
 class WelcomeConversation extends Conversation
 {
     /**

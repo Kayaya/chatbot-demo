@@ -70,7 +70,7 @@ class ContactStaff extends Conversation
             $this->repeat('Hmmmm this does not look like an image to me. Please try again');
         });
     }
-
+    
     protected function askAudio(){
         $this->askForAudio('Please upload an audio.', function ($audio){
             $this->say('I received '.count($audio).' audio(s).');

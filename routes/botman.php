@@ -3,7 +3,7 @@ use App\Http\Controllers\BotManController;
 
 $botman = resolve('botman');
 
-//
+// 
 $botman->fallback(function($bot){
     $bot->typesAndWaits(1);
     $message = $bot->getMessage();

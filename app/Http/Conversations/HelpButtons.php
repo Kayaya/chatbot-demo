@@ -5,7 +5,7 @@ namespace App\Http\Conversations;
 use BotMan\BotMan\Messages\Conversations\Conversation;
 use BotMan\BotMan\Messages\Outgoing\Actions\Button;
 use BotMan\BotMan\Messages\Outgoing\Question;
-
+ 
 class HelpButtons extends Conversation
 {
     /**
