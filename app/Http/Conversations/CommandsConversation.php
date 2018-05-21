@@ -15,10 +15,10 @@ class CommandsConversation extends Conversation
      */
     public function run()
     {
-    	$this->say('__________________________');
     	$this->say('You can chat with me freely and if I can\'t understand you, feel free to type the following commands');
     	$this->say('"help":-- Give a simple guide, but does not stops a coversation');
     	$this->say('"stop":-- Stops a conversation');
+        $this->say('"letter":-- Request a letter');
     	$this->say('"contact staff":-- chose this to send a message directly to a member of staff');
     }
 }

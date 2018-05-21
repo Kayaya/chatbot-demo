@@ -63,9 +63,9 @@
         </div>
     </div>
     <script>
-        var botmanWidget = {
+        var botmanWidget = { 
             title: 'Sol helpdesk bot',
-            introMessage: 'Hi, I am an helpdesk bot. You can ask me anything about the Southampton Solent University',
+            introMessage: 'Welcome, I am an helpdesk bot. You can ask me anything about the Solent University',
             bubbleBackground: '#c60303',
             mainColor: '#5dc6cc'    
         };
